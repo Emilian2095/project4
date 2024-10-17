@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+  padding:0;
+  margin:0;}
+
+  body{
+    background-color:#4d416e;
+    display:column;
+    align-items:center;
+    font-size: 18px;
+    padding: 0 15px;
+    font-family: "Times New Roman", Times, serif;
+    color:#cfc84a;
+  }
+  
+h1 {
+  text-align: center;
+  font-size: 2.3rem;
+  margin-top: 7rem ;
+  }
+
+  .container{
+    border: 5px double teal;
+    width: 500px;
+    margin: 2rem auto;
+  }
+
+  span{
+    color: whitesmoke;
+    font-style: italic;
+  
+  }
+  #input-container {
+  display: flex;
+  margin-top: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:100%;
+ 
+}
+
+#convert-btn {
+  background-color:#d1a624;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  font-weight:bold;
+  margin-top: 20px;
+  width: 6rem;
+  border-radius: 10px;
+
+}
+
+.reset-btn{
+  background-color: black;
+  color: whitesmoke;
+  cursor: pointer;
+  border: none;
+  font-size: 1.2rem;
+  font-weight:bold;
+  margin-top: 20px;
+  width: 6rem;
+  border-radius: 10px;
+}
+
+.number-input {
+  height: 1.5rem;
+  width:6rem;
+  text-align: center;
+  margin-top: .5rem;
+}
+
+#output {
+  margin: 60px 0;
+  min-width: 200px;
+  width: fix-content;
+  height: fix-content;
+  min-height: 80px;
+  word-break: break-word;
+  padding: 15px;
+  border: 5px solid red;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 500px) {
+  .input-container {
+    flex-direction: row;
+  }
+
+  #output-converter {
+    max-width: 460px;
+  }
+}
